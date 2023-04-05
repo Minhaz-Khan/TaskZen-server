@@ -18,7 +18,7 @@ const corsConfig = {
 }
 app.use(cors(corsConfig))
 app.options('*', cors(corsConfig))
-app.use(json({ limit: '5mb' }))
+app.use(json({ limit: '1mb' }))
 app.use(morgan('dev'))
 
 // route
